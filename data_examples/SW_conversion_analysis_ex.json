@@ -1,0 +1,47 @@
+{
+    "meta": {
+      "request": {
+        "segment": "digitalstorm.com%23",
+        "granularity": "Monthly",
+        "metrics": [
+          "Visits",
+          "ConvertedVisits",
+          "ConversionRate",
+          "Stickiness"
+        ],
+        "format": "json",
+        "start_date": "2020-01-01",
+        "end_date": "2020-03-31",
+        "country": "us"
+      },
+      "status": "Success",
+      "last_updated": "2021-02-28",
+      "device": "Desktop"
+    },
+    "segments": [
+      {
+        "date": "2020-01-01",
+        "visits": 131239.0386587736,
+        "converted_visits": 602,
+        "conversion_rate": 0.004587049754038677,
+        "stickiness": 1,
+        "confidence": "High"
+      },
+      {
+        "date": "2020-02-01",
+        "visits": 103825.05746953053,
+        "converted_visits": 538,
+        "conversion_rate": 0.005181793423595133,
+        "stickiness": 1,
+        "confidence": "Low"
+      },
+      {
+        "date": "2020-03-01",
+        "visits": 135953.1443451221,
+        "converted_visits": 957,
+        "conversion_rate": 0.007039189895973424,
+        "stickiness": 1,
+        "confidence": "Low"
+      }
+    ]
+  }

@@ -1,0 +1,31 @@
+{
+    "meta": {
+      "request": {
+        "granularity": "Monthly",
+        "main_domain_only": false,
+        "show_verified": true,
+        "format": "json",
+        "domain": "bbc.com",
+        "start_date": "2017-11-01",
+        "end_date": "2018-01-31",
+        "limit": null,
+        "country": "gb"
+      },
+      "status": "Success",
+      "last_updated": "2019-02-28"
+    },
+    "pages_per_visit": [
+      {
+        "date": "2017-11-01",
+        "pages_per_visit": 2.332534447249785
+      },
+      {
+        "date": "2017-12-01",
+        "pages_per_visit": 2.619422952848847
+      },
+      {
+        "date": "2018-01-01",
+        "pages_per_visit": 2.5181848930440407
+      }
+    ]
+  }

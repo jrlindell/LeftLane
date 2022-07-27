@@ -1,0 +1,420 @@
+{
+    "meta": {
+      "request": {
+        "main_domain_only": false,
+        "format": "json",
+        "domain": "$Arts_and_Entertainment~Music",
+        "page": 1,
+        "start_date": "2020-12-01",
+        "end_date": "2020-12-31",
+        "limit": null,
+        "country": "gb",
+        "show_verified": false,
+        "state": null
+      },
+      "status": "Success",
+      "last_updated": "2020-12-31"
+    },
+    "top_sites": [
+      {
+        "rank": 1,
+        "domain": "spotify.com"
+      },
+      {
+        "rank": 2,
+        "domain": "soundcloud.com"
+      },
+      {
+        "rank": 3,
+        "domain": "discogs.com"
+      },
+      {
+        "rank": 4,
+        "domain": "ultimate-guitar.com"
+      },
+      {
+        "rank": 5,
+        "domain": "genius.com"
+      },
+      {
+        "rank": 6,
+        "domain": "planetradio.co.uk"
+      },
+      {
+        "rank": 7,
+        "domain": "bandcamp.com"
+      },
+      {
+        "rank": 8,
+        "domain": "globalplayer.com"
+      },
+      {
+        "rank": 9,
+        "domain": "last.fm"
+      },
+      {
+        "rank": 10,
+        "domain": "nme.com"
+      },
+      {
+        "rank": 11,
+        "domain": "youtubetomp3music.com"
+      },
+      {
+        "rank": 12,
+        "domain": "mixcloud.com"
+      },
+      {
+        "rank": 13,
+        "domain": "lbc.co.uk"
+      },
+      {
+        "rank": 14,
+        "domain": "thomann.de"
+      },
+      {
+        "rank": 15,
+        "domain": "hmv.com"
+      },
+      {
+        "rank": 16,
+        "domain": "gear4music.com"
+      },
+      {
+        "rank": 17,
+        "domain": "rateyourmusic.com"
+      },
+      {
+        "rank": 18,
+        "domain": "worldstarhiphop.com"
+      },
+      {
+        "rank": 19,
+        "domain": "deezer.com"
+      },
+      {
+        "rank": 20,
+        "domain": "pitchfork.com"
+      },
+      {
+        "rank": 21,
+        "domain": "officialcharts.com"
+      },
+      {
+        "rank": 22,
+        "domain": "andertons.co.uk"
+      },
+      {
+        "rank": 23,
+        "domain": "reverb.com"
+      },
+      {
+        "rank": 24,
+        "domain": "npr.org"
+      },
+      {
+        "rank": 25,
+        "domain": "heart.co.uk"
+      },
+      {
+        "rank": 26,
+        "domain": "rollingstone.com"
+      },
+      {
+        "rank": 27,
+        "domain": "azlyrics.com"
+      },
+      {
+        "rank": 28,
+        "domain": "classicfm.com"
+      },
+      {
+        "rank": 29,
+        "domain": "radio-uk.co.uk"
+      },
+      {
+        "rank": 30,
+        "domain": "lnk.to"
+      },
+      {
+        "rank": 31,
+        "domain": "beatport.com"
+      },
+      {
+        "rank": 32,
+        "domain": "worldstar.com"
+      },
+      {
+        "rank": 33,
+        "domain": "audioz.download"
+      },
+      {
+        "rank": 34,
+        "domain": "collider.com"
+      },
+      {
+        "rank": 35,
+        "domain": "internetradiouk.com"
+      },
+      {
+        "rank": 36,
+        "domain": "radiofarda.com"
+      },
+      {
+        "rank": 37,
+        "domain": "billboard.com"
+      },
+      {
+        "rank": 38,
+        "domain": "ytmp3.cc"
+      },
+      {
+        "rank": 39,
+        "domain": "voanews.com"
+      },
+      {
+        "rank": 40,
+        "domain": "splice.com"
+      },
+      {
+        "rank": 41,
+        "domain": "gak.co.uk"
+      },
+      {
+        "rank": 42,
+        "domain": "musicradar.com"
+      },
+      {
+        "rank": 43,
+        "domain": "songsterr.com"
+      },
+      {
+        "rank": 44,
+        "domain": "allmusic.com"
+      },
+      {
+        "rank": 45,
+        "domain": "gearslutz.com"
+      },
+      {
+        "rank": 46,
+        "domain": "residentadvisor.net"
+      },
+      {
+        "rank": 47,
+        "domain": "exystence.net"
+      },
+      {
+        "rank": 48,
+        "domain": "tunein.com"
+      },
+      {
+        "rank": 49,
+        "domain": "juno.co.uk"
+      },
+      {
+        "rank": 50,
+        "domain": "box.net"
+      },
+      {
+        "rank": 51,
+        "domain": "guitarguitar.co.uk"
+      },
+      {
+        "rank": 52,
+        "domain": "wegotthiscovered.com"
+      },
+      {
+        "rank": 53,
+        "domain": "pmtonline.co.uk"
+      },
+      {
+        "rank": 54,
+        "domain": "musescore.com"
+      },
+      {
+        "rank": 55,
+        "domain": "smoothradio.com"
+      },
+      {
+        "rank": 56,
+        "domain": "capitalfm.com"
+      },
+      {
+        "rank": 57,
+        "domain": "loudersound.com"
+      },
+      {
+        "rank": 58,
+        "domain": "stevehoffman.tv"
+      },
+      {
+        "rank": 59,
+        "domain": "ableton.com"
+      },
+      {
+        "rank": 60,
+        "domain": "distrokid.com"
+      },
+      {
+        "rank": 61,
+        "domain": "lyricstranslate.com"
+      },
+      {
+        "rank": 62,
+        "domain": "radiox.co.uk"
+      },
+      {
+        "rank": 63,
+        "domain": "soundonsound.com"
+      },
+      {
+        "rank": 64,
+        "domain": "atrl.net"
+      },
+      {
+        "rank": 65,
+        "domain": "whosampled.com"
+      },
+      {
+        "rank": 66,
+        "domain": "musicnotes.com"
+      },
+      {
+        "rank": 67,
+        "domain": "dv247.com"
+      },
+      {
+        "rank": 68,
+        "domain": "onlineradiobox.com"
+      },
+      {
+        "rank": 69,
+        "domain": "fender.com"
+      },
+      {
+        "rank": 70,
+        "domain": "songfacts.com"
+      },
+      {
+        "rank": 71,
+        "domain": "blabbermouth.net"
+      },
+      {
+        "rank": 72,
+        "domain": "freesound.org"
+      },
+      {
+        "rank": 73,
+        "domain": "roughtrade.com"
+      },
+      {
+        "rank": 74,
+        "domain": "bax-shop.co.uk"
+      },
+      {
+        "rank": 75,
+        "domain": "dimeadozen.org"
+      },
+      {
+        "rank": 76,
+        "domain": "tidal.com"
+      },
+      {
+        "rank": 77,
+        "domain": "metrolyrics.com"
+      },
+      {
+        "rank": 78,
+        "domain": "lyrics.com"
+      },
+      {
+        "rank": 79,
+        "domain": "dice.fm"
+      },
+      {
+        "rank": 80,
+        "domain": "shazam.com"
+      },
+      {
+        "rank": 81,
+        "domain": "chordify.net"
+      },
+      {
+        "rank": 82,
+        "domain": "kerumal.com"
+      },
+      {
+        "rank": 83,
+        "domain": "drownedinsound.com"
+      },
+      {
+        "rank": 84,
+        "domain": "image-line.com"
+      },
+      {
+        "rank": 85,
+        "domain": "albumoftheyear.org"
+      },
+      {
+        "rank": 86,
+        "domain": "premiumbeat.com"
+      },
+      {
+        "rank": 87,
+        "domain": "newalbumreleases.net"
+      },
+      {
+        "rank": 88,
+        "domain": "thefretboard.co.uk"
+      },
+      {
+        "rank": 89,
+        "domain": "popjustice.com"
+      },
+      {
+        "rank": 90,
+        "domain": "basschat.co.uk"
+      },
+      {
+        "rank": 91,
+        "domain": "thehut.com"
+      },
+      {
+        "rank": 92,
+        "domain": "intmusic.net"
+      },
+      {
+        "rank": 93,
+        "domain": "sweetwater.com"
+      },
+      {
+        "rank": 94,
+        "domain": "peeplink.in"
+      },
+      {
+        "rank": 95,
+        "domain": "beatstars.com"
+      },
+      {
+        "rank": 96,
+        "domain": "qrz.com"
+      },
+      {
+        "rank": 97,
+        "domain": "imslp.org"
+      },
+      {
+        "rank": 98,
+        "domain": "absoluteradio.co.uk"
+      },
+      {
+        "rank": 99,
+        "domain": "songmeanings.com"
+      },
+      {
+        "rank": 100,
+        "domain": "virginradio.co.uk"
+      }
+    ]
+  }

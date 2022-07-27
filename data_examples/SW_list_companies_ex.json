@@ -1,0 +1,285 @@
+{
+    "response": {
+      "describe": {
+        "companies": [
+          {
+            "company_id": "39dee-eSdasdfaf2d-42asdff7-bdfd-8f398htwhw8bbcc5b",
+            "company_name": "NewsCompany",
+            "domains": [
+              "cnn.com",
+              "foxnews.com"
+            ]
+          },
+          {
+            "company_id": "4caads23t5f1f0bf-2771-46asdf90-ae7e-d042fee2433",
+            "company_name": "cnnTest",
+            "domains": [
+              "cnn.com",
+              "cnn.gr",
+              "cnn.co.jp",
+              "cnnespanol.cnn.com"
+            ]
+          },
+          {
+            "company_id": "75ed21ad91f-ac53-4f42-a8fad",
+            "company_name": "moonactive",
+            "domains": [
+              "moonactive.zendesk.com",
+              "moonactive.com"
+            ]
+          },
+          {
+            "company_id": "cec9df8d-95c6-4ddfadfa-8960-9e60902fe698",
+            "company_name": "NikeTest",
+            "domains": [
+              "nike.com",
+              "nike.id",
+              "nikee.com",
+              "nike.com.hk",
+              "nike.de",
+              "nike.ca",
+              "nike.com.br"
+            ]
+          }
+        ],
+        "countries": {
+          "ae": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "ar": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "at": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "au": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "be": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "bg": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "br": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "ca": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "ch": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "cl": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "co": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "cz": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "de": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "dk": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "eg": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "es": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "fi": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "fr": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "gb": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "gr": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "hk": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "hr": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "hu": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "id": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "ie": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "il": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "in": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "iq": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "it": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "jp": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "kw": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "ma": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "mx": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "my": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "nl": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "no": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "nz": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "pe": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "ph": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "pk": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "pl": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "pt": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "qa": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "ro": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "rs": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "ru": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "sa": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "se": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "sg": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "sk": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "th": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "tr": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "tw": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "ua": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "us": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "ve": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "vn": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "world": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          },
+          "za": {
+            "start_date": "2018-11",
+            "end_date": "2021-10"
+          }
+        }
+      }
+    }
+  }

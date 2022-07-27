@@ -1,0 +1,48 @@
+{
+    "meta": {
+      "request": {
+        "company_name": "cnn",
+        "granularity": "Monthly",
+        "metrics": [
+          "Visits",
+          "PagesPerVisit",
+          "PageViews",
+          "BounceRate",
+          "VisitDuration"
+        ],
+        "company_id": "4ca1f0bf-2771-4690-ae7e-d8042fee2433",
+        "format": "json",
+        "start_date": "2021-07-01",
+        "end_date": "2021-09-30",
+        "country": "us"
+      },
+      "status": "Success",
+      "last_updated": "2021-10-31"
+    },
+    "companies": [
+      {
+        "date": "2021-07-01",
+        "visits": 245505587.54088828,
+        "bounce_rate": 0.6006123576475306,
+        "pages_per_visit": 1.6323390150826684,
+        "visit_duration": 114.01022500414291,
+        "page_views": 400748348.96378535
+      },
+      {
+        "date": "2021-08-01",
+        "visits": 251089196.85948983,
+        "bounce_rate": 0.6012042558100886,
+        "pages_per_visit": 1.6236987038468338,
+        "visit_duration": 112.2675904780213,
+        "page_views": 407693203.49069613
+      },
+      {
+        "date": "2021-09-01",
+        "visits": 226768151.62759817,
+        "bounce_rate": 0.6070263907868729,
+        "pages_per_visit": 1.6157542736711275,
+        "visit_duration": 108.48610996329657,
+        "page_views": 366401610.124794
+      }
+    ]
+  }
