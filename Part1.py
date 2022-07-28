@@ -2,6 +2,8 @@ import json
 import requests
 import operator
 
+
+# this is to show how i built this, but delete when trying to use and fill in the variables below
 with open('data_examples/pages_per_visit.json', 'r') as f: # companies
     ppv = json.load(f)
 with open('data_examples/avg_visit_dur.json', 'r') as f: # total_traffic

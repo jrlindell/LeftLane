@@ -1,7 +1,7 @@
 import pandas as pd
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
-data = pd.read_csv('Dataset.csv', nrows=5000)
+df = pd.read_csv('/Users/footb/Downloads/Dataset.csv')
 
 # START WITH EDA
 # what is the user engagement over time?
@@ -10,32 +10,67 @@ data['date'] = data['transaction_timestamp'].dt.date
 data['year'] = pd.DatetimeIndex(data['transaction_timestamp']).year
 data['month'] = pd.DatetimeIndex(data['transaction_timestamp']).month
 data['day'] = pd.DatetimeIndex(data['transaction_timestamp']).day
-a = data.groupby(['date'])['transaction_revenue'].count()
-a.plot.line() #this is a little messy, so maybe if we group by month then plot
 
-a = data.groupby(['year', 'month'])['transaction_revenue'].count()
-a.plot.line()
+#month_gb = data.groupby(['year', 'month'])['transaction_revenue'].sum().reset_index(name = 'revenue')
+
+fig, axs = plt.subplots(figsize=(12,4))
+data.groupby(['date'])['transaction_revenue'].sum().plot(kind='line')
+plt.xlabel('Date')
+plt.ylabel('Revenue ($)')
+plt.savefig('plots/transaction_revenue_over_time.png')
+
 # do line per transaction type
 #########
+a = data.groupby(['date', 'transaction_type'])['transaction_revenue'].sum().reset_index(name = 'revenue')
+fig, ax = plt.subplots()
+for type in list(a['transaction_type'].unique()):
+    ax.plot(a[a.transaction_type==type].date, a[a.transaction_type==type].revenue,label=type)
+plt.xlabel('Date')
+plt.ylabel('Revenue ($)')
+plt.savefig('plots/transaction_revenue_over_time_by_type.png')
 
 # avg transaction value? revenue? (for both winners and orders)
-data.groupby(['transaction_type'])['transaction_value'].mean()
-data.groupby(['transaction_type'])['transaction_revenue'].mean()
+a = data.groupby(['date', 'transaction_type'])['transaction_revenue'].sum().reset_index(name = 'revenue')
+a.boxplot(column=['revenue'], by='transaction_type')
+plt.savefig('plots/revenue_box.png')
+
+b = data.groupby(['date', 'transaction_type'])['transaction_value'].sum().reset_index(name = 'value')
+b.boxplot(column=['value'], by='transaction_type')
+plt.savefig('plots/value_box.png')
+
 ### by state
-data.groupby(['transaction_type', 'state'])['transaction_value'].mean()
-data.groupby(['transaction_type', 'state'])['transaction_revenue'].mean()
+a = data.groupby(['state'], as_index=True)['transaction_revenue'].sum().reset_index(name = 'revenue')
+a.set_index(['state']).plot(kind='bar', xlabel='State', ylabel='Revenue ($)', legend=False)
+plt.savefig('plots/revenue_state.png')
+
+b = data.groupby(['state'], as_index=True)['transaction_value'].sum().reset_index(name = 'value')
+b.set_index(['state']).plot(kind='bar', xlabel='State', ylabel='Value ($)', legend=False)
+plt.savefig('plots/value_state.png')
+
+
 
 # what states are most active?
-data.groupby(['state'])['user_id'].count()
-data.groupby(['state'])['transaction_value'].sum()
+a = data.groupby(['state'])['user_id'].count()
+a.to_csv('outputs/state_count.csv')
+a = data.groupby(['state'])['transaction_revenue'].sum()
+a.to_csv('outputs/state_revenue.csv')
 
-# what users are most active?
-data.groupby(['user_id'])['state'].count().head(5)
+
+# what states win the most?
+a = data[data['transaction_type'] == 'Prize claimed'].groupby(['state'])['transaction_revenue'].count()
+a.to_csv('outputs/state_wins.csv')
 
 # X% of users rebought something
-len(data[data.groupby(['user_id'])['state'].transform('count') > 1]) / len(data) 
+t = len(data[data.groupby(['user_id'])['state'].transform('count') > 1]) / len(data) * 100
+print(t, "% of users re-played")
 
+# growth over time by state
 
-
-
-z = 2
+a = data.groupby(['date', 'state'])['transaction_revenue'].sum().reset_index(name = 'revenue')
+fig, ax = plt.subplots()
+for type in list(a['state'].unique()):
+    ax.plot(a[a.state==type].date, a[a.state==type].revenue,label=type)
+plt.xlabel('Date')
+plt.ylabel('Revenue ($)')
+plt.legend()
+plt.savefig('plots/growth_by_state.png')
