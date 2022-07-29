@@ -1,33 +1,55 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import datetime
 
-df = pd.read_csv('/Users/footb/Downloads/Dataset.csv')
+print('started download')
+data = pd.read_csv('/Users/footb/Downloads/Dataset.csv')
+print('completed download')
+data.head(5).to_csv('outputs/head.csv')
 
 # START WITH EDA
 # what is the user engagement over time?
 data['transaction_timestamp'] = pd.to_datetime(data['transaction_timestamp'])
 data['date'] = data['transaction_timestamp'].dt.date
-data['year'] = pd.DatetimeIndex(data['transaction_timestamp']).year
-data['month'] = pd.DatetimeIndex(data['transaction_timestamp']).month
-data['day'] = pd.DatetimeIndex(data['transaction_timestamp']).day
 
 #month_gb = data.groupby(['year', 'month'])['transaction_revenue'].sum().reset_index(name = 'revenue')
 
-fig, axs = plt.subplots(figsize=(12,4))
+fig, axs = plt.subplots(figsize=(11.5,4))
 data.groupby(['date'])['transaction_revenue'].sum().plot(kind='line')
 plt.xlabel('Date')
 plt.ylabel('Revenue ($)')
 plt.savefig('plots/transaction_revenue_over_time.png')
 
+### zoomed in
+fig, axs = plt.subplots(figsize=(11.5,4))
+a = data[data['date'] >= datetime.date(2021, 1, 1)]
+a.groupby(['date'])['transaction_revenue'].sum().plot(kind='line')
+plt.xlabel('Date')
+plt.ylabel('Revenue ($)')
+plt.savefig('plots/transaction_revenue_over_time_zoomed.png')
+
+
 # do line per transaction type
 #########
 a = data.groupby(['date', 'transaction_type'])['transaction_revenue'].sum().reset_index(name = 'revenue')
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(11.5, 4))
 for type in list(a['transaction_type'].unique()):
     ax.plot(a[a.transaction_type==type].date, a[a.transaction_type==type].revenue,label=type)
 plt.xlabel('Date')
 plt.ylabel('Revenue ($)')
+plt.legend()
 plt.savefig('plots/transaction_revenue_over_time_by_type.png')
+
+### zoomed
+t = data[data['date'] >= datetime.date(2021, 1, 1)]
+a = t.groupby(['date', 'transaction_type'])['transaction_revenue'].sum().reset_index(name = 'revenue')
+fig, ax = plt.subplots(figsize=(11.5, 4))
+for type in list(a['transaction_type'].unique()):
+    ax.plot(a[a.transaction_type==type].date, a[a.transaction_type==type].revenue,label=type)
+plt.xlabel('Date')
+plt.ylabel('Revenue ($)')
+plt.legend()
+plt.savefig('plots/transaction_revenue_over_time_by_type_zoomed.png')
 
 # avg transaction value? revenue? (for both winners and orders)
 a = data.groupby(['date', 'transaction_type'])['transaction_revenue'].sum().reset_index(name = 'revenue')
